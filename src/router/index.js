@@ -21,6 +21,15 @@ const routes = [{
   },
 },
 {
+  path: '/checkout/step/:step',
+  name: 'CheckoutPage',
+  props: true,
+  component: () => import('../pages/CheckoutPage.vue'),
+  meta: {
+    layout: 'checkout'
+  },
+},
+{
   path: '*',
   name: 'ErrNotFound',
   component: () => import('../pages/global/ErrNotFound.vue'),

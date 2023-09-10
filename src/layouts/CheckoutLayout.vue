@@ -4,9 +4,11 @@
       <NavBarComponent />
     </header>
     <main>
-      <b-container class="py-5">
-        <router-view />
-      </b-container>
+      <v-app>
+        <v-container>
+          <router-view />
+        </v-container>
+      </v-app>
     </main>
     <footer>
       <FooterComponent />

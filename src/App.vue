@@ -8,11 +8,13 @@
 
 <script>
 import AppLayout from "./layouts/AppLayout";
+import CheckoutLayout from './layouts/CheckoutLayout';
 
 export default {
   name: "App",
   components: {
     AppLayout,
+    CheckoutLayout
   },
   computed: {
     layout() {

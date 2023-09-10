@@ -10,6 +10,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item :to="{ name: 'HomePage' }">Главная</b-nav-item>
+          <b-nav-item :to="{ name: 'CheckoutPage', params: { step: 1 } }">Заказ</b-nav-item>
           <b-nav-item-dropdown text="Страницы" right>
             <template v-for="num in 5">
               <b-dropdown-item

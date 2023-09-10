@@ -1,7 +1,12 @@
 <template>
   <div>
-    <h1>Главная</h1>
-    <FormComponent :onSubmit="onSubmit"/>
+    <h1 class="text-center">Главная</h1>
+    <b-row class="justify-content-center">
+      <b-col cols="6">
+        <FormComponent :onSubmit="onSubmit" />
+      </b-col>
+    </b-row>
+
     <b-modal id="modal-1" title="Ура!!!">
       <p class="my-4">Данные успешно отправлены!</p>
     </b-modal>
@@ -40,8 +45,12 @@ export default {
   created() {},
   computed: {},
   methods: {
+    /**
+     * Действие после отправки формы
+     * @returns {undefined}
+     */
     onSubmit() {
-      this.$bvModal.show("modal-1")
+      this.$bvModal.show("modal-1");
     },
   },
   mounted() {},

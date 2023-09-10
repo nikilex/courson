@@ -1,4 +1,4 @@
-# my-app
+# Courson app
 
 ## Project setup
 ```
