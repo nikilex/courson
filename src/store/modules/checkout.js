@@ -2,6 +2,7 @@ import {
     CHECKOUT_MODULE
 } from "../const/index";
 import checkoutMock from "../mock/checkoutMock";
+const { cloneDeep } = require("lodash");
 
 export default {
     namespaced: true,
@@ -42,7 +43,7 @@ export default {
         async [CHECKOUT_MODULE.ACTIONS_FETCH_CHECKOUT]({
             commit
         }) {
-            commit(CHECKOUT_MODULE.SET_CHECKOUT, checkoutMock)
+            commit(CHECKOUT_MODULE.SET_CHECKOUT, cloneDeep(checkoutMock))
         },
     },
     getters: {
