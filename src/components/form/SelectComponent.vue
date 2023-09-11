@@ -118,7 +118,6 @@ export default {
       const filtered = [];
       const regOption = new RegExp(this.searchFilter, "ig");
       for (const option of this.options) {
-        console.log(this.searchFilter);
         if (
           this.searchFilter.length < 1 ||
           option[this.keyOfValue].match(regOption)
